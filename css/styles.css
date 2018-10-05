@@ -1,0 +1,118 @@
+body.framed {
+    border: 10px solid transparent;
+}
+body.framed .wrapper {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+body.main-scrollable .main {
+    overflow-y: hidden;
+}
+.wrapper {
+    position: absolute;
+    box-sizing: border-box;
+    width: 98.5%;
+    min-height: 97%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px #444;
+    background-clip: content-box;
+    height: 97%;
+    overflow: hidden;
+
+}
+.registratie {
+    height: 100%;
+    background-color: #f9f9f9;
+    white-space: nowrap;
+    font-size: 0;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+}
+.registratie::-webkit-scrollbar {
+    display: none;
+}
+.registratie:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.registratie__form {
+    display: inline-block;
+    max-width: 500px;
+    width: 90%;
+    vertical-align: middle;
+    font-size: 14px;
+    white-space: normal;
+    border-radius: 4px;
+    text-align: left;
+    color: #5e6870;
+    position: relative;
+    padding: 50px;
+}
+@media (max-width: 768px) {
+    .registratie__form {
+        vertical-align: top;
+        margin-top: 60px;
+    }
+}
+.registratie__action {
+    overflow: hidden;
+}
+.login__remember {
+    float: left;
+}
+.registratie__submit {
+    float: right;
+}
+.registratie__logo {
+    height: 125px;
+    margin-bottom: 20px;
+    background: url('../fotos/Logo.png') 50% top no-repeat;
+    background-size: contain;
+}
+.form-border {
+    border: 1px solid #a6c566;
+    padding: 25px;
+}
+.form-legend {
+    padding: 20px;
+    font-size: 12px;
+}
+.input {
+    width: 49.37%;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.input2 {
+    padding-bottom: 10px;
+}
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVDhPvdRPK0RRHMbxw8RuNvMCZqUUO7sxStlaKBvCG7C1MTuR4h3Yi42ykS0bZWWDkpQkSTakRCl/vs/tnNud22/GGbc89Zm595kzv7m35h5nZAJX6EnO7NRwh0pyZmQci5hFA9/o813ePGagNXXfLWAQSdahD+UIYeCIf8+7RRioCwn9B0bhnn0h9xjGFiZ9l/eKIexizHfBJpoKOcAKHjNd3jGWcZPpZB9NRVHpwAecFPSGdOCaDgrmDP87cABPBn3Ryq8D+3Gd8QKtPYSVjm65hEto7ZQKIx0NDE+G/g29KoxED+zGBbRuVUWLRA+chtZ8oqqiRaIG6urOoTV7KtokaqC2pB1Pu0+7pAPfsaGDAumCtjX9cPLyhVNYz2iMsOtog3ZlLCHc2l9sY845534A8Eq1RapqtroAAAAASUVORK5CYII=) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+.datalist-filter .form-group {
+    margin-bottom: 7.5px;
+}
+.add-on .input-group-btn > .btn {
+    border-left-width:0;left:-2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border-color:#cccccc;
+}
